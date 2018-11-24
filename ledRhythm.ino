@@ -1,5 +1,5 @@
 int soundsensor = 3;
-int led = 7;                // defining pin numbers
+int led = 7;
 void setup() 
 { 
   pinMode (soundsensor, INPUT);
@@ -8,8 +8,8 @@ void setup()
 
 void loop()
 {
-  int sensorvalue = digitalRead (soundsensor);            //if the sound intensity is higher than threshold which is set by us, 
-                                                          //then sensor would return the value as 1
+  int sensorvalue = digitalRead (soundsensor);    
+  
   if (sensorvalue == 1)                                    
   {
     digitalWrite(led, HIGH);
